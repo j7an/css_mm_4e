@@ -1,0 +1,103 @@
+$html-bg-light-yellow: rgb(253, 248, 171);
+$body-bg-white: rgb(255, 255, 255);
+$body-bdr-dark-gray: rgb(75, 75, 75);
+$body-bx-shdw-dark-blue: rgba(44, 82, 100, .75);
+$h1-green-color: rgb(133, 161, 16);
+$h1-bg-lt-green-color: rgb(226, 235, 180);
+$h2-orange-color: rgb(249, 107, 24);
+$h2-bdr-green-color: rgb(141, 165, 22);
+$sidebar-bg-lt-orange-color: rgb(250, 235, 199);
+$sidebar-bdr-orange: rgb(252, 101, 18);
+$sidebar-box-shadow-black: rgba(0, 0, 0, .5);
+
+// reset browser styles
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+ol {
+  list-style: decimal;
+  padding-left: 1.4em;
+}
+
+ul {
+  list-style: square;
+  padding-left: 1.4em;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+// end reset browser styles
+
+html {
+  background-color: $html-bg-light-yellow;
+}
+
+body {
+  background-color: $body-bg-white;
+  border: 3px solid $body-bdr-dark-gray;
+  box-shadow: 0 0 15px 5px $body-bx-shdw-dark-blue;
+  margin: 20px auto 0;
+  max-width: 760px;
+  padding: 15px;
+}
+
+h1 {
+  background-color: $h1-bg-lt-green-color;
+  color: $h1-green-color;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.75em;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0 -15px 2px;
+  padding: 5px 15px 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  border-bottom: 2px dotted $h2-bdr-green-color;
+  border-top: 2px dotted $h2-bdr-green-color;
+  color: $h2-orange-color;
+  font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  margin: 15px 0 5px;
+  overflow: hidden;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.sidebar {
+  background-color: $sidebar-bg-lt-orange-color;
+  border: 1px dotted $sidebar-bdr-orange;
+  border-radius: 10px;
+  border-top: 20px solid $sidebar-bdr-orange;
+  box-shadow: 5px 5px 10px $sidebar-box-shadow-black;
+  float: right;
+  margin: 10px;
+  padding: 10px 20px;
+  width: 30%;
+
+  h2 {
+    border: 0;
+    margin-top: 0;
+    padding: 0;
+  }
+}
