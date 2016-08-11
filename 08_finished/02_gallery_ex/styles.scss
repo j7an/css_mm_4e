@@ -1,0 +1,115 @@
+$dark-gray: #666;
+$dark-gray2: #999;
+$white: #fff;
+$dark-blue: #14556b;
+$figure-img-bdr: 1px solid $dark-gray;
+$figure-img-shadow: rgba(0, 0, 0, .5);
+
+$arial-font-stack: Arial, Helvetica, sans-serif;
+$verdana-font-stack: Verdana, Arial, Helvetica, sans-serif;
+$georgia-font-stack: Georgia, "Times New Roman", Times, serif;
+
+// reset browser styles
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+ol { 
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
+/* end reset browser styles */
+
+body {
+  font-size: 62.5%;
+}
+
+.content {
+  margin-left: 15px;
+  margin-top: 15px;
+  border: 1px dashed #999;
+  border-right: none;
+  border-bottom: none;
+}
+
+p.caption {
+  font-size: 1.3em;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.gallery .figure p {
+  font-family: $arial-font-stack;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: normal;
+}
+
+h1 {
+  border-bottom: 1px dashed $dark-gray2;
+  color: $dark-blue;
+  font: normal 2.4em $verdana-font-stack;
+  margin: 0;
+  padding: 5px 0 5px 8px;
+}
+
+p {
+  font: 1.6em / 160% $georgia-font-stack;
+  margin: 10px 8px;
+}
+
+.copyright {
+  border-top: 1px dashed $dark-gray2;
+  clear: both;
+  color: $dark-gray;
+  font-family: $verdana-font-stack;
+  font-size: 1em;
+  margin-left: 0;
+  padding-left: 8px;
+  text-transform: uppercase;
+}
+
+figcaption {
+  font: 1.1em $arial-font-stack;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+figure {
+  display: inline-block;
+  margin: 0 10px 10px;
+  vertical-align: top;
+  width: 210px;
+
+  img {
+    background-color: $white;
+    border: $figure-img-bdr;
+    box-shadow: 2px 2px 4px $figure-img-shadow;
+    padding: 4px;
+  }
+}
